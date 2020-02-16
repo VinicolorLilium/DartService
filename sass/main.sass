@@ -1,0 +1,255 @@
+$font: 'Raleway', sans-serif
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	
+body
+	font-size: 15px
+	line-height: 25px 
+	font-family: $font
+	
+ul
+	list-style: none
+	
+a, a:visited, a:focus 
+	text-decoration: none
+	color: inherit
+	display: inline-block
+	
+.wrapper
+	max-width: 1640px
+	padding: 0 80px
+	margin: 0 auto
+	
+@import "_header.sass"
+@import "_managment-tool.sass"
+@import "_numbers.sass"
+@import "_services.sass"
+@import "_customers.sass"
+@import "_team.sass"
+@import "_contact-us.sass"
+@import "_footer.sass"
+
+
+// ====== MEDIA 1100px ======
+@media screen and (max-width: 1100px) 
+	.wrapper
+		padding: 0 30px
+
+	.header .wrapper
+		padding-bottom: 80px
+		
+	.managment-tool__conteiner
+		margin: 102px -30px 0
+		
+	.managment-tool__item
+		width: calc(100% / 12 * 4 - 30px)		
+		margin: 0 15px 20px 
+		
+	.customers__title
+		font-size: 32px
+		line-height: 35px
+		margin: 47px 0 19px
+		
+	.customers__subscribe
+		margin-bottom: 50px
+		
+	.customers__conteiner
+		margin: 0 -25px
+		
+	.customers__item
+		width: calc(50% - 50px)
+		margin: 0 25px
+		
+	.footer .wrapper
+		padding: 30px
+		
+// ====== MEDIA 960px ======
+@media screen and (max-width: 960px) 
+	.header__content
+		margin-top: 50px
+		
+	.header__title
+		font-size: 45px
+		
+	.numbers__item
+		width: calc(100% / 12 * 6)
+		
+// ====== MEDIA 830px ======
+@media screen and (max-width: 830px) 
+	.customers .wrapper
+		padding: 50px 30px 0	 	
+	 	
+	.customers__conteiner
+		margin: 0
+	 
+	.customers__item 
+		width: 100%
+		margin: 0 0 50px
+		
+	.customers-slider
+		margin-bottom: 0
+		
+// ====== MEDIA 780px ======
+@media screen and (max-width: 780px) 
+	.header__menu a
+		margin: 0 10px
+		
+	.header__title
+		font-size: 36px
+		line-height: 45px
+		
+	.header__description
+		font-size: 16px
+		line-height: 30px
+		
+	.managment-tool__conteiner
+		margin: 50px -25px 0
+		justify-content: center
+		
+	.managment-tool__item
+		width: calc(100% / 12 * 6 - 50px)
+		margin: 0 25px 20px
+		
+	.managment-tool
+	 	padding: 60px 0
+	 	
+	.footer__nav
+		margin-top: 20px
+		
+	.footer__nav a
+		margin: 0 50px 0 0
+	 	
+// ====== MEDIA 570px ======
+@media screen and (max-width: 570px)
+	.contact-us__form input
+		width: 240px
+		
+	.footer__nav a
+		margin-right: 20px
+		
+	.footer__link
+		margin-bottom: 20px
+		
+	.footer__social a:before
+		margin: 0 20px 0 0
+		
+	.footer__bottom
+		margin-top: 20px
+		
+// ====== MEDIA 560px ======
+@media screen and (max-width: 560px) 
+	.header .wrapper
+		padding-top: 20px
+		
+	.header__top
+		position: relative
+		padding-top: 0
+		
+	.header__btn
+		position: absolute
+		top: 0
+		right: 0
+		
+	.header__nav
+		margin-top: 20px
+		width: 100%
+		
+	a.header__drop-menu
+		display: block
+		
+	.header__menu
+		opacity: 0
+	
+	.header__menu--active
+		opacity: 1
+		
+	.header__content
+		margin-top: 30px
+		flex-wrap: wrap
+		
+	.header__content--item
+		width: 100%
+		
+	.header__content--video
+		margin-top: 20px
+		
+	.managment-tool__conteiner
+		margin: 50px 0 0
+		
+	.managment-tool__item
+		width: 100%
+		margin: 0 0 20px
+		
+	.services__content
+		display: block
+		
+	.services__img
+		margin: 0 0 15px
+		
+	.customers__title
+		margin-top: 0
+		
+	.team
+		padding: 50px 0
+		
+	.team__conteiner
+		margin-top: 50px
+		
+	.team__list a
+		width: 90px
+		height: 90px
+		
+	.team__content
+		margin-top: 40px
+		
+// ====== MEDIA 415px ======
+@media screen and (max-width: 415px) 
+	.contact-us__form input
+		width: 100%
+		
+// ====== MEDIA 380px ======
+@media screen and (max-width: 380px) 
+	.header__btn
+		position: static
+		margin: 10px 0 0 10px
+		
+	.header__link a
+		padding: 10px 3px 
+		font-size: 14px
+		
+	a.header__link--by
+		margin: 0 0 10px
+		
+	.managment-tool__title
+		line-height: 45px
+		
+	.numbers__item
+		width: 100%
+		
+	.customers-slider__inner
+		display: block
+		margin-bottom: 50px
+		
+	.customers-slider__img
+		margin: 0 0 15px
+		
+	.customers-slider button.slick-arrow:before
+		transform: translateX(-50%)
+		
+	.team__list a
+		width: 70px
+		height: 70px
+		margin: 10px
+		padding: 5px
+		
+	.team__conteiner
+		margin-top: 20px
+		
+	.team__content
+		margin-top: 20px
+		
+	.contact-us__form label
+		margin-bottom: 15px

@@ -1,0 +1,71 @@
+.numbers .wrapper 
+	padding: 0
+
+.numbers__conteiner 
+	display: flex
+	flex-wrap: wrap
+	
+.numbers__item
+	width: calc(100% / 12 * 3) 
+	padding: 45px 0
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	
+.numbers__item:first-child
+	background: #80d8ff
+	
+.numbers__item:nth-child(2)
+	background: #82b1ff
+	
+.numbers__item:nth-child(3)
+	background: #b388ff
+	
+.numbers__item:nth-child(4)
+	background: #ea80fc
+
+.numbers__icon 
+	width: 60px
+	height: 60px
+	background: #fff
+	border-radius: 50%
+	margin-right: 23px
+	position: relative
+	
+.numbers__icon:before
+	font-size: 30px
+	line-height: 0.83
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	
+.numbers__item:first-child .numbers__icon:before
+	font-family: 'icomoon'
+	content: "\e900"
+	color: #80d8ff
+	
+.numbers__item:nth-child(2) .numbers__icon:before
+	font-family: 'icomoon'
+	content: "\e902"
+	color: #82b1ff
+	
+.numbers__item:nth-child(3) .numbers__icon:before
+	font-family: 'icomoon'
+	content: "\e903"
+	color: #b388ff
+	
+.numbers__item:nth-child(4) .numbers__icon:before
+	font-family: 'icomoon'
+	content: "\e908"
+	color: #ea80fc
+
+.numbers__content
+	font-size: 20px
+	font-weight: 800
+	color: #fff
+	text-transform: capitalize
+	
+.numbers__content span
+	display: block

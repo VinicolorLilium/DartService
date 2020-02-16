@@ -1,0 +1,90 @@
+.contact-us 
+	padding: 49px 0 100px
+	text-align: center
+	background: #fafafa
+.wrapper 
+
+.contact-us__title 
+	font-size: 45px
+	font-weight: 600
+	color: #061e37
+	text-transform: capitalize
+	margin-bottom: 29px
+
+.contact-us__subscribe
+	max-width: 555px
+	color: #061e37
+	margin: 0 auto
+
+.contact-us__form 
+	margin-top: 49px
+	
+	& form
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		max-width: 600px
+		margin: 0 auto
+		
+	& input,
+	& textarea
+		width: 280px
+		border-radius: 5px
+		border: solid 1px #061e37
+		font-size: 14px
+		font-weight: 500
+		color: #061e37
+		text-transform: capitalize
+		padding: 13.5px 20px
+		margin-bottom: 20px
+		outline: none
+		background: inherit
+		
+	& textarea
+		width: 100%
+		resize: none
+		min-height: 150px
+		
+	& input[type=checkbox]
+		display: none
+		
+	& label
+		display: flex
+		align-items: center
+		font-weight: 500
+		color: #061e37
+
+		
+	& label:before
+		content: ''
+		display: inline-block
+		width: 14px
+		height: 14px
+		border: 2px solid #061e37
+		border-radius: 2px
+		vertical-align: middle
+		margin-right: 9px
+		
+	& input[type="checkbox"]:checked + label:before
+		background: #061e37
+		
+	& input[type=submit]
+		width: 128px
+		border-radius: 5px
+		box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.15)
+		background-color: #1de9b6
+		font-size: 16px
+		font-weight: 500
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding: 12.5px 0
+		border: 1px solid transparent
+		margin-bottom: 0
+		cursor: pointer
+		transition: all .3s
+		
+	& input[type=submit]:hover
+		color: #1de9b6
+		background: inherit
+		border: 1px solid #1de9b6

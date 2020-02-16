@@ -1,0 +1,73 @@
+.footer .wrapper 
+	padding: 98px 80px 104px
+	background: #061e37
+
+.footer__top,
+.footer__bottom
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap  
+	
+.footer__nav,
+.footer__link, 
+.footer__social 
+	display: flex
+	flex-wrap: wrap
+	
+.footer__nav a
+	font-weight: 600
+	color: #fff
+	margin-left: 50px
+	border-bottom: 2px solid transparent
+	transition: all .3s
+
+	&:hover 
+		border-bottom: 2px solid #fff
+
+.footer__bottom 
+	margin-top: 50px
+
+.footer__link a
+	opacity: 0.5
+	color: rgba(255, 255, 255, 0.5)
+	margin-right: 44px
+	
+.footer__link li 
+	position: relative
+	
+.footer__link li:after
+		content: ''
+		display: inline-block
+		width: 6px
+		height: 6px
+		background-color: rgba(255, 255, 255, 0.5)
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 19px
+
+.footer__link li:last-child:after
+	display: none	
+
+.footer__social a:before
+	font-family: icomoon
+	font-size: 20px
+	color: rgba(255, 255, 255, 0.2)
+	margin-left: 20px
+	
+.footer__social li:nth-child(1) a:before
+	content: "\f09a"
+	
+.footer__social li:nth-child(2) a:before
+	content: "\f099"
+	
+.footer__social li:nth-child(3) a:before
+	content: "\f0e1"
+	
+.footer__social li:nth-child(4) a:before
+	content: "\f17d"
+	
+.footer__social li:nth-child(5) a:before
+	content: "\f1b4"
